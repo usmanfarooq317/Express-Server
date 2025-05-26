@@ -1,4 +1,3 @@
-// src/controllers/auth.controller.ts
 import { Request, Response } from 'express';
 import { validationResult } from 'express-validator';
 import bcrypt from 'bcryptjs';
@@ -6,7 +5,7 @@ import jwt from 'jsonwebtoken';
 
 const JWT_SECRET = 'mysecretkey';
 
-// Temporary in-memory user storage
+
 const users: { [email: string]: { name: string; email: string; password: string } } = {};
 
 export const register = (req: Request, res: Response) => {

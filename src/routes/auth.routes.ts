@@ -1,4 +1,3 @@
-// src/routes/auth.routes.ts
 import { Router } from 'express';
 import { body } from 'express-validator';
 import { register, getMe } from '../controllers/auth.controller';
@@ -6,7 +5,6 @@ import authMiddleware from '../middleware/auth.middleware';
 
 const router = Router();
 
-// Register route with validation
 router.post(
   '/register',
   [
